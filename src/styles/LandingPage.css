@@ -1,0 +1,191 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bg-section {
+}
+
+.List {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ListItem {
+  color: white;
+}
+
+.Logo {
+  cursor: pointer;
+}
+
+.Logo.Logo--no-margin {
+  margin: 0;
+}
+
+.Logo a {
+  display: flex;
+  align-items: center;
+}
+
+.NavigationLinks {
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+
+  letter-spacing: 1.67px;
+}
+
+.NavigationLinks a {
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.40);
+  margin-right: 32px;
+}
+
+.Container {
+  width: 100%;
+  max-width: 1168px;
+
+  margin: auto;
+
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.Content {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+main.Container {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+footer.Container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 34px 64px;
+}
+
+.Content .MainHeading {
+  max-width: 424px;
+}
+
+.Content h1, .Content h2 {
+  margin: 0;
+}
+
+.Content h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.64px;
+
+  color: #FFFFFF;
+}
+
+.Content h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.44px;
+
+  color: rgba(255, 255, 255, 0.70);
+  line-height: 60px;
+}
+
+.LinksWrapper {
+  width: 200px;
+  height: 212px;
+
+  padding: 20px 23px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+
+  color: white
+}
+
+.LinksWrapper h1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 22px;
+
+  letter-spacing: 0.69px;
+}
+
+.LinksWrapper .Links {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  letter-spacing: 0.44px;
+  list-style-type: none;
+
+  opacity: 0.8;
+}
+
+.LinksWrapper .Link {
+  margin-bottom: 16px;
+}
+
+.LinksWrapper .Link a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.FAQ .Container {
+  flex-direction: column;
+  max-width: 820px;
+  padding: 80px 0;
+}
+
+.FAQ .Container h1 {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.88px;
+  padding-left: 16px;
+  margin-bottom: 42px;
+}
+
+@media all and (max-width: 767px) {
+  .FAQ .Container {
+    padding: 42px 0;
+  }
+
+  .FAQ .Container h1 {
+    font-size: 28px;
+  }
+}
+

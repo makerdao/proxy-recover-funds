@@ -128,7 +128,7 @@ export const getTokenTrusted = (token, from, to) => {
 }
 
 export const getProxy = account => {
-  return promisify(objects.proxyRegistry.proxies)(account).then(r => r === "0x0000000000000000000000000000000000000000" ? null : getProxyOwner(r).then(r2 => r2 === account ? r : null));
+  return promisify(objects.proxyRegistry.proxies)(account, 0).then(r => r === "0x0000000000000000000000000000000000000000" ? null : getProxyOwner(r).then(r2 => r2 === account ? r : null));
 }
 
 /*
